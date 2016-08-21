@@ -11,27 +11,28 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var WelcomeComponent;
+    var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            WelcomeComponent = (function () {
-                function WelcomeComponent() {
-                    this.pageTitle = "Welcome";
+            AppComponent = (function () {
+                function AppComponent() {
+                    this.pageTitle = 'Cassie Lier Portfolio';
                 }
-                WelcomeComponent = __decorate([
+                AppComponent = __decorate([
                     core_1.Component({
-                        templateUrl: 'app/home/welcome.component.html'
+                        selector: 'portfolio-app',
+                        template: "\n    <div>\n        <h1>{{pageTitle}}</h1>\n        <div>Basic Component</div>\n    </div>\n    "
                     }), 
                     __metadata('design:paramtypes', [])
-                ], WelcomeComponent);
-                return WelcomeComponent;
+                ], AppComponent);
+                return AppComponent;
             }());
-            exports_1("WelcomeComponent", WelcomeComponent);
+            exports_1("AppComponent", AppComponent);
         }
     }
 });
-//# sourceMappingURL=welcome.component.js.map
+//# sourceMappingURL=app.component.js.map
